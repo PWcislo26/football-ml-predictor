@@ -29,9 +29,9 @@ Since the data was already clean, I then went onto data analysis phase of my pro
 
 First I checked Home Win/Draw/Away Win distribution in the dataset.
 
-![Dist 1](C:\Users\piotr\OneDrive\Desktop\outpu1.png)
+![Dist 1](images/match_dist.png)
 
-![Dist 2](C:\Users\piotr\OneDrive\Desktop\output2.png)
+![Dist 2](images/match_dist%25.png)
 
 After that, I decided to simplify the dataset by dropping non-relevant variables that weren't official match
 stats e.g. _Match Excitement_ or _Year_.
@@ -41,12 +41,12 @@ in machine learning models could've led to data leakage.
 
 Last step was checking collinearity between variables and dropping ones that were heavily related.
 
-![corr 1](C:\Users\piotr\OneDrive\Desktop\corr1.png)
+![corr 1](images/corr_matrix.png)
 
 After dropping some of the variables I generated another matrix which rendered much better results. 
 These were also the final variables used in machine learning phase.
 
-![](C:\Users\piotr\OneDrive\Desktop\corr2.png)
+![](images/corr_matrix_2.png)
 
 ---
 
@@ -63,9 +63,9 @@ I built two iterations of models - first iteration was with all default settings
 GridSearchCV to find model parameters that would maximize accuracy of each classifier.
 
 This is a preview of some of the obtained results:
-![Accuracy comparison](C:\Users\piotr\OneDrive\Desktop\final.png)
+![Accuracy comparison](images/accuracy.png)
 
-![](C:\Users\piotr\OneDrive\Desktop\away_recall.png)
+![](images/away_recall.png)
 
 Overall the highest reached accuracy was 68,4% for random forest model. 
 The least effective was KNN with only 59,2% accuracy. 
