@@ -60,7 +60,7 @@ For this project I used 5 following classification algorithms:
 5. K-Nearest Neighbors
 
 I built two iterations of models - first iteration was with all default settings, in the second iteration I used 
-GridSearchCV to find model parameters that would maximize accuracy of each classifier.
+GridSearchCV to find model parameters that would maximize accuracy of each classifier. In the end both results were compared.
 
 This is a preview of some of the obtained results:
 ![Accuracy comparison](images/accuracy.png)
